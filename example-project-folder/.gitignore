@@ -1,0 +1,39 @@
+# .gitignore for this project folder only.
+# One pattern per line. Paths are relative to this folder.
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Secrets: never commit API keys. Commit .env.example instead.
+.env
+.env.*
+!.env.example
+
+# AI tool local files (personal settings, caches, logs)
+.claude/settings.local.json
+.cursor/
+*.log
+
+# Dependencies and build output (for code prototypes)
+node_modules/
+dist/
+build/
+.next/
+__pycache__/
+.venv/
+
+# Exports and renders (regenerate them instead of committing)
+exports/
+*.mp4
+*.mov
+
+# Big design source files that don't belong in Git
+*.psd
+*.ai
+*.sketch
+*.fig
